@@ -1,6 +1,6 @@
 
 <?php 
-        $hostname = "10.0.0.135";
+        $hostname = "172.17.0.1";
         $bancodedados = "inter_ecomm";
         $usuario = "root";
         $senha = "123";
