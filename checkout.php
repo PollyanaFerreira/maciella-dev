@@ -85,7 +85,7 @@ if (isset($_GET['id'])) {
     <!-- Três imagens pequenas -->
     <div class="col-md-1">
       <?php
-        // Crie um loop para gerar as imagens duplicadas
+        // Um loop para gerar as imagens duplicadas
         for ($i = 1; $i <= 3; $i++) {
             echo '<img src="' . $produto['imagem'] . '.png" class="img-fluid mb-4" alt="Imagem ' . $i . '" height="190" width="190"></br>';
         }
@@ -97,7 +97,7 @@ if (isset($_GET['id'])) {
     <div class="col-md-5">
         <h1 class="font-weight-normal normal"><?= $produto['nome_produto']; ?></h1>
         <p class="font-weight-normal mt-5">
-        <?= $produto['descrição']; ?>
+        <?= nl2br($produto['descrição']); ?>
         <h1>
             <b>R$ <?= number_format($produto['preço'], 2, ',', '.'); ?></b>
         </h1>
