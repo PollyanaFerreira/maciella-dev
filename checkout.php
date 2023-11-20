@@ -108,6 +108,7 @@ if (isset($_GET['id'])) {
     </div>
   </div>
 
+    <hr class="hw-100">
 
     <div class="row mt-3">
         <div class="col-md-12">
