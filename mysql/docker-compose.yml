@@ -1,0 +1,30 @@
+version: "3"
+services:
+ mysql:
+  image: mysql:8.0
+  ports:
+    - 3306:3306
+  environment:
+   MYSQL_ROOT_PASSWORD: 123
+   MYSQL_DATABASE: local
+   MYSQL_USER: local
+   MYSQL_PASSWORD: 123
+  networks: 
+    - mysql_network
+  volumes:
+    - mysql_data:/var/lib/mysql
+ phpmyadmin:
+  image: phpmyadmin/phpmyadmin
+  networks:
+   - mysql_network
+  environment:
+   PMA_HOST: mysql
+   PMA_PORT: 3306
+  ports:
+   - '8098:80'
+
+networks:
+ mysql_network:
+
+volumes:
+ mysql_data:
