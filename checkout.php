@@ -48,7 +48,7 @@ if ((isset($_SESSION['email']) == true) and (isset($_SESSION['senha']) == true))
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary d-flex justify-content-between fixed-top" id="menu-home-checkout">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between fixed-top" id="menu-home-checkout">
             <div class="d-none" id="link">
                 <a class="navbar-brand" href="#">Contatos</a>
             </div>
@@ -59,7 +59,7 @@ if ((isset($_SESSION['email']) == true) and (isset($_SESSION['senha']) == true))
                 <a class="" href="login.php"><span class="material-symbols-outlined">
                     account_circle
                     </span></a>
-                    <a class=" " href="#"><span class="material-symbols-outlined">
+                    <a class="" href="#"><span class="material-symbols-outlined">
                     shopping_cart
                     </span></a>
             </div>
